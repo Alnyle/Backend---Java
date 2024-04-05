@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+// 1- django commands => create django project
+// django-admin startproject projectName => django-admin startproject Airline 
+
+// 2- python manage.py startapp appName => create django application 
+// python manage.py startapp flights
+
+// 3- python manage.py runserver => run the server that django project run origin
+
+// 4- python manage.py makemigrations => build infostructure of the database
+
+// 5 - python manage.py migrate => apply change in the database
+
+// create Administrative account => to use admin app inside django web application 
+// python manage.py createsuperuser
+
+
+// database commands
+
+// 1 - insert into database table
+// f = Flight(origin="New York", destination="London", duration=415) like insert in sql 
+// tableName.save() => f.save()
+
+
+// 2- get the entry in the table
+// className.objects.all() => Flight.objects.all()
+
+// 3 - first entry in the table
+// first store className(tableName) it in a variable then write variable name access elements
+// example
+// flights = Flight.objects.all()
+// flight = flights.first()
+// flight
+
+// 4 - access attributes of a table
+// flight.duration
+
+5 - delete row (record) from table
+// flight.delete
+
+6- get one object
+// ClassName.objects.get(attribute=value) => 
+Airport.objects.get(city="New York")
+or
+NewYork = Airport.objects.get(city="New York")
+NewYork
+
+6- filer in django 
+// ClassName.objects.filter(attribute=value) => Airport.objects.filter(city="New York")
+

@@ -1,0 +1,16 @@
+
+
+body {
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    /*text-align: center;*/
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 200px;
+    color: white;
+}
